@@ -28,7 +28,7 @@ class SiteGenerator {
       rules.push({ rule, link, description })
     }
 
-    return rules
+    return rules;
   }
 
   startSpinner() {
@@ -46,19 +46,19 @@ class SiteGenerator {
   }
 
   async writeFile(filename) {
-    this.startSpinner()
     const template = fs.readFileSync('./template.mustache', 'utf8')
     const rules = await this.getRuleList()
     const html = await Mustache.render(template, { rules })
-    
+
+    this.startSpinner();
     this.createOutputDirectory()
     fs.writeFile(`${OUTPUT_PATH}/${filename}`, html, err => {
       if(err) {
-        return console.error("Couldn't write file.")
+        return console.log(chalk.red("Couldn't write file."));
       }
 
-      this.stopSpinner()
-      console.log(chalk.green(`The html was successfully generated and saved at ${OUTPUT_PATH}/${filename}`))
+      this.stopSpinner();
+      console.log(chalk.green(`The html was successfully generated and saved at ${OUTPUT_PATH}/${filename}`));
     })
   }
 }
