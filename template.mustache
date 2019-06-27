@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      .rule-table {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .rule-table th, .rule-table td {
+        padding: 10px;
+        text-align: left;
+      }
+      .rule-table th {
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="rule-table">
+      <tr>
+        <th>Rule</th>
+        <th>Short Description</th>
+      </tr>
+      {{ #rules }}
+        <tr class="rule-row">
+          <td><a href="{{& link}}" target="_blank">{{ rule }}</a></td>
+          <td class="description">{{ description }}</td>
+        </tr>
+      {{/rules}}
+    </table>
+  </body>
+</html>
