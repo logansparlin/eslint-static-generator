@@ -1,5 +1,5 @@
 {
-  "name": "eslint-static-site",
+  "name": "eslint-static-generator",
   "version": "1.0.0",
   "description": "Static Generator for ESLint rules",
   "main": "index.js",

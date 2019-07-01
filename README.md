@@ -1,6 +1,18 @@
 # eslint-static-generator
 A generator to create static files based on your eslint configs. Running this tool will create a static JSON file or a static HTML site containing the ESLint rule name, link to the docs page and a short description of the rule.
 
+#### JSON Output
+```json
+[{
+  "name": "rule-name",
+  "link": "https://link-to/rule-name",
+  "description": "The Short Description"
+}]
+```
+
+#### HTML Output
+![eslint-static-generator HTML screenshot](./screenshot.png)
+
 ## Get Started
 - First, clone this repository locally
 - CD into the repository
