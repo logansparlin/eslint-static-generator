@@ -1,13 +1,13 @@
 {
   "name": "eslint-static-site",
   "version": "1.0.0",
-  "description": "Static Site Generator for EDS ES Lint rules",
+  "description": "Static Generator for ESLint rules",
   "main": "index.js",
   "bin": {
     "eslint-static-generator": "index.js"
   },
   "scripts": {},
-  "author": "eDataSource",
+  "author": "Logan Sparlin",
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
