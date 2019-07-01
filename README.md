@@ -3,11 +3,13 @@ A generator to create static files based on your eslint configs. Running this to
 
 #### JSON Output
 ```json
-[{
-  "name": "rule-name",
-  "link": "https://link-to/rule-name",
-  "description": "The Short Description"
-}]
+{
+  "rules": [{
+    "name": "rule-name",
+    "link": "https://link-to/rule-name",
+    "description": "The Short Description"
+  }]
+}
 ```
 
 #### HTML Output
