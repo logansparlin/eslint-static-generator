@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Static Site Generator for EDS ES Lint rules",
   "main": "index.js",
-  "scripts": {
-    "generate-html": "node index.js -h",
-    "generate-json": "node index.js -j"
+  "bin": {
+    "eslint-static-generator": "index.js"
   },
+  "scripts": {},
   "author": "eDataSource",
   "license": "ISC",
   "dependencies": {
