@@ -7,4 +7,8 @@ A generator to create static files based on your eslint configs
 - Run `npm link`
 
 ### Example
-`eslint-static-generator --input <path/to/your/.eslintrc> --output <output/directory> --html`
+```
+eslint-static-generator --input <path/to/your/.eslintrc> --output <output/directory> --html
+```
+
+This will generate a JSON file and a static HTML site at `<output/directory>`
