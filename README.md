@@ -6,7 +6,7 @@ A generator to create static files based on your eslint configs. Running this to
 {
   "rules": [{
     "name": "rule-name",
-    "link": "https://link-to/rule-name",
+    "link": "https://eslint.org/docs/rules/rule-name",
     "description": "The Short Description"
   }]
 }
